@@ -14,8 +14,9 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 1) [Additional CPIS Videos](#cpia)
 
 ### <a name="cpiv"></a>Getting Started with Cloud Platform Integration Video Series List
-1) [Getting Started with the Cloud Platform Integration Suite](exercises/extends4hccloudsdkcf.md)
-
+1) [Finding More Resources on the Cloud Platform Integration Suite]()
+1) [Onboarding to Cloud Platform Integration Suite Trial]()
+1) More to Come
 
 ### <a name="cpil"></a>Helpful Links
 
