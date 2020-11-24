@@ -5,7 +5,7 @@
 
 ### Description
 
-This ReadMe file contains links and code for the Getting Started with Cloud Platform Integration video series. Please note that this info file is a work in progress and subject to changes and additions.
+This ReadMe file contains links and code for the Getting Started with Cloud Platform Integration video series. Please note that this file is a work in progress and subject to changes and additions.
 
 ## <a name="gss4hapi"></a>Resources for Cloud Platform Integration
 1) [Getting Started with CPIS Videos](#cpiv)
