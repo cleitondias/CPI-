@@ -24,6 +24,7 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 1) [Developer Tutorials](https://developers.sap.com/tutorial-navigator.html?tag=products:technology-platform/sap-cloud-platform/sap-cloud-platform-integration-for-process-services)
 1) [Discovery Center](discovery-center.cloud.sap)
 1) [SAP HANA Academy](http://academy.saphana.com/)
+1) [Open SAP Course](https://open.sap.com/courses/cp9)
 
 ### <a name="cpic"></a>Code Snippets
 
