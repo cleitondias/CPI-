@@ -15,7 +15,7 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 
 ### <a name="cpiv"></a>Getting Started with Cloud Platform Integration Video Series List
 1) [Getting Started with the Cloud Platform Integration Suite](exercises/extends4hccloudsdkcf.md)
-1) [Developing with CPIS Open Connectors](exercises/openconnectorss4hcloudapis.md)
+
 
 ### <a name="cpil"></a>Helpful Links
 
@@ -27,3 +27,5 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 ### <a name="cpic"></a>Code Snippets
 
 ### <a name="cpia"></a>Additional Video Series for CPIS
+1) [Getting Started with SAP API's (Featuring API Business Hub & S/4HANA Cloud API's](https://github.com/saphanaacademy/s4hcapi/blob/master/exercises/gettingstarteds4hcloudapis.md)
+1) [Developing with CPIS Open Connectors (Featuring S/4HANA Cloud API's)](https://github.com/saphanaacademy/s4hcapi/blob/master/exercises/openconnectorss4hcloudapis.md)
