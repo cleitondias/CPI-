@@ -1,6 +1,6 @@
 <table width=100% border=0>
-<tr ><td colspan=2><h1>SAP S/4HANA Cloud</h1></td></tr>
-<tr><td><h3>Partner Video Series</h3></td><td width=66%></br>&nbsp;SAP Cloud Platform Integration Suite</td>
+<tr ><td colspan=2><h1>SAP Cloud Platform Integration Suite</h1></td></tr>
+<tr><td><h3>Partner Video Series</h3></td><td width=66%></br>&nbsp;Getting Started with CPIS</td>
 </table>
 
 ## Description
