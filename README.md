@@ -26,7 +26,7 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 
 ### <a name="cpic"></a>Code Snippets
 
-*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Code Used in The Getting Started with CPIS Video Series](/cpiscs.md)
+*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Code Used in The Getting Started with CPIS Video Series](/CodeSnippets.md)
 
 ### <a name="cpia"></a>Additional Video Series for CPIS
 
