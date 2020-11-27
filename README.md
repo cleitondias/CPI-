@@ -9,16 +9,16 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 
 ### <a name="gss4hapi"></a>Resources for Cloud Platform Integration
 1) [Getting Started with CPIS Video Series](#cpiv)
-1) [Helpful Links](#cpil)
-1) [Code Snippets](#cpic)
-1) [Additional CPIS Videos](#cpia)
+1) [Helpful Links for Developing with CPIS](#cpil)
+1) [Code Snippets for this Video Series](#cpic)
+1) [Additional CPIS Video Series](#cpia)
 
 ### <a name="cpiv"></a>Getting Started with Cloud Platform Integration Video Series List
 1) [Finding More Resources on the Cloud Platform Integration Suite]()
 1) [Onboarding to Cloud Platform Integration Suite Trial]()
 1) More to Come
 
-### <a name="cpil"></a>Helpful Links
+### <a name="cpil"></a>Helpful Links for Developing with CPIS
 
 1) [SAP Help](https://help.sap.com/viewer/search?q=sap%20cloud%20platform%20integration%20suite)
 1) [Developer Tutorials](https://developers.sap.com/tutorial-navigator.html?tag=products:technology-platform/sap-cloud-platform/sap-cloud-platform-integration-for-process-services)
@@ -26,11 +26,11 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 1) [SAP HANA Academy](http://academy.saphana.com/)
 1) [Open SAP Course](https://open.sap.com/courses/cp9)
 
-### <a name="cpic"></a>Code Snippets
+### <a name="cpic"></a>Code Snippets for this Video Series
 
 *  &nbsp;&nbsp;&nbsp;&nbsp;[Code Used in The Getting Started with CPIS Video Series](/CodeSnippets.md)
 
-### <a name="cpia"></a>Additional Video Series for CPIS
+### <a name="cpia"></a>Additional CPIS Video Series
 
 Note that some of this content is older so the screens and procedures shown in the videos may not match with your experience.
 
