@@ -2,6 +2,8 @@ Note that this Code Snippets file will be added to as more videos are added to t
 
 ### Video 3 CPIS - Cloud Integration Add Flow Steps
 
+GroovyScript for Logging
+
 ```groovyscript
 
 import com.sap.gateway.ip.core.customdev.util.Message;
