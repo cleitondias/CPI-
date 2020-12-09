@@ -4,7 +4,7 @@ Note that this Code Snippets file will be added to as more videos are added to t
 
 GroovyScript for Logging
 
-```groovyscript
+```javascript
 
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
