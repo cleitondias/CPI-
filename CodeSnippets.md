@@ -24,7 +24,7 @@ def Message processData(Message message) {
 
 ### Video 5 CPIS - Using API Management
 
-API Policy: Preflow > Assign Message (incoming) > AddHeaderAPIKey
+API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Incoming Request) > AddHeaderAPIKey
 
 ```xml
 
