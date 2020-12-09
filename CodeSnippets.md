@@ -21,3 +21,21 @@ def Message processData(Message message) {
 }
 
 ```
+
+### Video 5 CPIS - Using API Management
+
+API Policy: preflow > assign message (incoming)
+
+```xml
+
+<AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+    <Add>
+        <Headers>
+            <Header name="apikey">YourAPIKeyGoesHere</Header>
+        </Headers>
+    </Add>
+    <IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" type="request"></AssignTo>
+</AssignMessage>
+
+```
