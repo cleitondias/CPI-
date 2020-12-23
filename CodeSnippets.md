@@ -51,3 +51,20 @@ API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Inco
 </AssignMessage>
 
 ```
+
+### Video 8 CPIS - Adding a Filter to the Application
+
+```javascript
+
+app.get('/srv/salesbycountry/:id', function (req, res) {
+    var p = parseInt(req.params.id);
+    req.db.exec('SELECT * FROM "myapphana.db::sales" WHERE "id" = ?', [p], function (err, results) {   
+        if (err) {               
+            res.type('text/plain').status(500).send('ERROR: ' + err.toString());
+            return;
+        }
+        res.status(200).json(results);
+    });
+});
+
+```
