@@ -73,7 +73,7 @@ app.get('/srv/salesbycountry/:id', function (req, res) {
 
 Code for New Sales By Country Resource, API Designer
 
-Go to https://swagger.io/docs/specification/basic-structure/ for more information on designing with Swagger.
+* Go to https://swagger.io/docs/specification/basic-structure/ for more information on designing with Swagger.
 
 ```yaml
 
