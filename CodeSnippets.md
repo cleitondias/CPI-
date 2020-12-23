@@ -75,7 +75,7 @@ Code for New Sales By Country Resource, API Designer
 
 Go to https://swagger.io/docs/specification/basic-structure/ for more information on designing with Swagger.
 
-```swagger
+```yaml
 
   '/srv/salesbycountry/{id}':
     get:
