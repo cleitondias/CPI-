@@ -34,5 +34,5 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 
 Note that some of this content is older so the screens and procedures shown in the videos may not match with your experience.
 
-1) [Getting Started with SAP API's (Featuring API Business Hub & S/4HANA Cloud API's](https://github.com/saphanaacademy/s4hcapi/blob/master/exercises/gettingstarteds4hcloudapis.md)
+1) [Getting Started with SAP API's (Featuring API Business Hub & S/4HANA Cloud API's)](https://github.com/saphanaacademy/s4hcapi/blob/master/exercises/gettingstarteds4hcloudapis.md)
 1) [Developing with CPIS Open Connectors (Featuring S/4HANA Cloud API's)](https://github.com/saphanaacademy/s4hcapi/blob/master/exercises/openconnectorss4hcloudapis.md)
