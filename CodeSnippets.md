@@ -105,3 +105,5 @@ Code for New Sales By Country Resource, API Designer
 ### Video 9 CPIS - Adding Managed CFApp API to an Integration Flow
 
 * Value Mapping File https://github.com/saphanaacademy/cpis/blob/main/resources/valuemappingCountryCodeToId.csv
+
+https://raw.githubusercontent.com/saphanaacademy/cpis/main/resources/valuemappingCountryCodeToId.csv
