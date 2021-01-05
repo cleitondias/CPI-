@@ -82,6 +82,8 @@ app.get('/srv/salesbycountry/:id', function (req, res) {
 
 ```
 
+### Video 16 CPIS - Adding a Filtered Resource to the Managed API
+
 Code for New Sales By Country Resource, API Designer
 
 * Go to https://swagger.io/docs/specification/basic-structure/ for more information on the OpenAPI Specification.
@@ -113,6 +115,6 @@ Code for New Sales By Country Resource, API Designer
 ```
 
 
-### Video 9 CPIS - Adding Managed CFApp API to an Integration Flow
+### Video 17 CPIS - Value Mapping
 
 [Value Mapping File](https://github.com/saphanaacademy/cpis/blob/main/resources/valuemappingCountryCodeToId.csv)
