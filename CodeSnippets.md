@@ -56,7 +56,7 @@ API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Inco
 
 API Policy: SAP Cloud Foundry XSUAA JWTToken > Scripts > config.js
 
-```xml
+```javascript
 
 context.setVariable("sapapim.clientId",context.proxyRequest.headers.clientId);
 context.setVariable("sapapim.secret",context.proxyRequest.headers.secret);
