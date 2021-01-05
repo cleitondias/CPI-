@@ -12,7 +12,7 @@ JSON for Process Integration Runtime
 }
 ```
 
-### Video 3 CPIS - Cloud Integration Add Flow Steps
+### Video 5 CPIS - Running Flows (Cloud Integration)
 
 GroovyScript for Logging
 
@@ -34,7 +34,7 @@ def Message processData(Message message) {
 
 ```
 
-### Video 5 CPIS - Using API Management
+### Video 9 CPIS - Policies (API Management)
 
 API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Incoming Request) > AddHeaderAPIKey
 
@@ -52,7 +52,18 @@ API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Inco
 
 ```
 
-### Video 8 CPIS - Adding a Filter to the Application
+### Video 13 CPIS - XSUAA Policy (API Management)
+
+API Policy: SAP Cloud Foundry XSUAA JWTToken > Scripts > config.js
+
+```xml
+
+context.setVariable("sapapim.clientId",context.proxyRequest.headers.clientId);
+context.setVariable("sapapim.secret",context.proxyRequest.headers.secret);
+
+```
+
+### Video 20 CPIS - Adding a Filter to the Application
 
 Code Block to Insert Below SRV Sales
 
