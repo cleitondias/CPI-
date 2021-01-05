@@ -63,7 +63,7 @@ context.setVariable("sapapim.secret",context.proxyRequest.headers.secret);
 
 ```
 
-### Video 20 CPIS - Adding a Filter to the Application
+### Video 15 CPIS - Adding a Filter to the Application
 
 Code Block to Insert Below SRV Sales
 
