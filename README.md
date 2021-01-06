@@ -7,14 +7,13 @@
 
 This ReadMe file contains links and code for the Getting Started with Cloud Platform Integration video series. Please note that this file is a work in progress and is subject to changes and additions.
 
+### <a name="cpiv"></a>Cloud Platform Integration Video Playlist
+* [Playlist on SAP HANA Academy](https://youtube.com/playlist?list=PLkzo92owKnVy5gfh9etKt_TLkc-dM2l7t)
+
 ### <a name="gss4hapi"></a>Resources for Cloud Platform Integration
-1) [Getting Started with CPIS Video Series](#cpiv)
 1) [Helpful Links for Developing with CPIS](#cpil)
 1) [Code Snippets for this Video Series](#cpic)
 1) [Additional CPIS Video Series](#cpia)
-
-### <a name="cpiv"></a>Cloud Platform Integration Video Series List
-* [Playlist on SAP HANA Academy](https://youtube.com/playlist?list=PLkzo92owKnVy5gfh9etKt_TLkc-dM2l7t)
 
 ### <a name="cpil"></a>Helpful Links for Developing with CPIS
 
