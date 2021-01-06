@@ -51,38 +51,7 @@ API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Inco
 </AssignMessage>
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                                       
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>                 
 ### NOTE: The Code Below is for Upcoming Videos
 
 ### Video 14 CPIS - XSUAA Policy (API Management)
