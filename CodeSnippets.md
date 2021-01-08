@@ -92,11 +92,6 @@ Code for New Sales By Country Resource, API Designer
 
 ```yaml
 
-  '/srv/salesbycountry/{id}':
-    get:
-      tags:
-        - SalesByCountry
-      description: Filter Items by Country ID
       parameters:
         - in: path
           name: id
@@ -106,13 +101,6 @@ Code for New Sales By Country Resource, API Designer
             minimum: 1
             maximum: 99
           description: Country ID
-      responses:
-        default:
-          description: error payload
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/Error'
 
 ```
 
