@@ -120,13 +120,6 @@ Code for New Sales By Country Resource, API Designer
           schema:
             type: string
           description: Client ID
-        - in: header
-          name: secret
-          required: true
-          schema:
-            type: string
-            format: password
-          description: Client Secret
 
 ```
 
