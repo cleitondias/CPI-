@@ -18,7 +18,7 @@ This ReadMe file contains links and code for the Getting Started with Cloud Plat
 1) [SAP HANA Academy](http://academy.saphana.com/)
 1) [Open SAP Course](https://open.sap.com/courses/cp9)
 
-### <a name="cpic"></a>Code Snippets for this Video Series
+### <a name="cpic"></a>Code Snippets, Roles, etc. for this Video Series
 
 *  &nbsp;&nbsp;&nbsp;&nbsp;[Code Used in The Getting Started with CPIS Video Series](/CodeSnippets.md)
 
