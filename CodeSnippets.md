@@ -1,6 +1,8 @@
 Note that this Code Snippets file will be added to as more videos are added to the Getting Started with CPIS video series.
 
-### Video 1 CPIS - Onboarding, Role Collections
+### Video 2 CPIS - Onboarding, Suite Activation
+
+The following Role Collections are required to follow along with this video series. Please note that this list is subject to change.
 
 - APIManagement.SelfService.Administrator
 - APIPortal.Administrator	
@@ -11,9 +13,6 @@ Note that this Code Snippets file will be added to as more videos are added to t
 - PI_Business_Expert	
 - PI_Integration_Developer	
 - trial-content-developer
-
-
-### Video 2 CPIS - Onboarding, Suite Activation
 
 JSON for Process Integration Runtime
 
