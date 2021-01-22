@@ -2,15 +2,15 @@ Note that this Code Snippets file will be added to as more videos are added to t
 
 ### Video 1 CPIS - Onboarding, Role Collections
 
-APIManagement.SelfService.Administrator
-APIPortal.Administrator	
-APIPortal.Service.CatalogIntegration
-Cloud Connector Administrator
-OpenConnectors_User
-PI_Administrator
-PI_Business_Expert	
-PI_Integration_Developer	
-trial-content-developer
+- APIManagement.SelfService.Administrator
+- APIPortal.Administrator	
+- APIPortal.Service.CatalogIntegration
+- Cloud Connector Administrator
+- OpenConnectors_User
+- PI_Administrator
+- PI_Business_Expert	
+- PI_Integration_Developer	
+- trial-content-developer
 
 
 ### Video 2 CPIS - Onboarding, Suite Activation
