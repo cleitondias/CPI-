@@ -108,11 +108,25 @@ Code for New Sales By Country Resource, API Designer
         - in: path
           name: id
           required: true
+          example: 1
           schema:
             type: integer
             minimum: 1
             maximum: 99
           description: Country ID
+        - in: header
+          name: clientId
+          required: true
+          schema:
+            type: string
+          description: Client ID
+        - in: header
+          name: secret
+          required: true
+          schema:
+            type: string
+            format: password
+          description: Client Secret
 
 ```
 
