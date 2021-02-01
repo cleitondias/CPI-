@@ -131,7 +131,7 @@ Code for New Sales By Country Resource, API Designer
 
 ### Video 19 CPIS - Adding Value Mapping to an Integration Flow
 
-Groovy Script for Calling a Value Mapp
+Groovy Script for Value Mapping
 
 ```javascript
 
