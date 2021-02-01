@@ -124,6 +124,46 @@ Code for New Sales By Country Resource, API Designer
 ```
 
 
-### Video 17 CPIS - Value Mapping
+### Video 18 CPIS - Value Mapping
 
 [Value Mapping File](https://github.com/saphanaacademy/cpis/blob/main/resources/valuemappingCountryCodeToId.csv)
+
+
+### Video 19 CPIS - Adding Value Mapping to an Integration Flow
+
+Groovy Script for Calling a Value Mapping
+
+```javascript
+
+import com.sap.gateway.ip.core.customdev.util.Message;
+import java.util.HashMap;
+import com.sap.it.api.ITApiFactory
+//ValueMapping Api will be used to execute value mapping with the given parameters
+import com.sap.it.api.mapping.ValueMappingApi
+
+def Message processData(Message message) {
+
+   def map = message.getProperties();
+   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null)    
+   
+   
+   // the Value Mapping functionality defined below
+   // ValueMap (Source agency, Source identifier, Source value, Target agency, Target identifier) = Target value;
+   
+   // get source value from message property
+   // reference: sourceValue = map.get("<your source value>");
+   sourceValue = map.get("<your source value>");
+
+   // the getMappedValue inputs below (except for sourceValue) come from the related Value Mapping Artifact
+   // reference: def targetValue = valueMapApi.getMappedValue('<your source agency>', '<your source identifier>', sourceValue, '<your target agency>', '<your target identifier>')
+   def targetValue = valueMapApi.getMappedValue('<your source agency>', '<your source identifier>', sourceValue, '<your target agency>', '<your target identifier>')
+   
+   // set output value as message property
+   // reference: message.setProperty("<your target value>", targetValue);      
+   message.setProperty("<your target value>", targetValue);  
+   
+   return message;
+}
+
+
+```
