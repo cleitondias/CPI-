@@ -133,7 +133,7 @@ Code for New Sales By Country Resource, API Designer
 
 Groovy Script for Value Mapping
 
-```javascript
+```java
 
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
