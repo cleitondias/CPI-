@@ -138,28 +138,31 @@ Groovy Script for Value Mapping
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
 import com.sap.it.api.ITApiFactory
-//ValueMapping Api will be used to execute value mapping with the given parameters
 import com.sap.it.api.mapping.ValueMappingApi
+// mapping.ValueMapping Api will be used to execute value mapping with the given parameters
 
 def Message processData(Message message) {
 
    def map = message.getProperties();
-   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null)    
+   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null) 
+   
+   // Step 1: assign message property vars
+   def inputProperty = "yourInputProperty";
+   def outputProperty = "yourOutputProperty";
    
    // the Value Mapping functionality defined below
    // ValueMap (Source agency, Source identifier, Source value, Target agency, Target identifier) = Target value;
    
-   // get source value from message property
-   // reference: sourceValue = map.get("<your source value>");
-   sourceValue = map.get("<your source value>");
-
-   // the getMappedValue inputs below (except for sourceValue) come from the related Value Mapping Artifact
-   // reference: def targetValue = valueMapApi.getMappedValue("<your source agency>", "<your source identifier>", sourceValue, "<your target agency>", "<your target identifier>")
-   def targetValue = valueMapApi.getMappedValue("<your source agency>", "<your source identifier>", sourceValue, "<your target agency>", "<your target identifier>")
+   // yourValueMappingExample
    
-   // set output value as message property
-   // reference: message.setProperty("<your target value>", targetValue);      
-   message.setProperty("<your target value>", targetValue);  
+   // Step 2: assign getMappedValue vars
+   def sourceAgency = "yourSourceAgency";
+   def sourceIdentifier = "yourSourceIdentifier";
+   def targetAgency = "yourTargetAgency";
+   def targetIdentifier = "yourTargetIdentifier";   
+
+   def targetValue = valueMapApi.getMappedValue(sourceAgency, sourceIdentifier, map.get(inputProperty), targetAgency, targetIdentifier)
+   message.setProperty(outputProperty, targetValue);  
    
    return message;
 }
