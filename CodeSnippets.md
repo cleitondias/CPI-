@@ -139,7 +139,7 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
 import com.sap.it.api.ITApiFactory
 import com.sap.it.api.mapping.ValueMappingApi
-// mapping.ValueMapping Api will be used to execute value mapping with the given parameters
+// mapping.ValueMapping API will be used to execute value mapping with the given parameters
 
 def Message processData(Message message) {
 
