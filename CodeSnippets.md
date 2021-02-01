@@ -131,7 +131,7 @@ Code for New Sales By Country Resource, API Designer
 
 ### Video 19 CPIS - Adding Value Mapping to an Integration Flow
 
-Groovy Script for Calling a Value Mapping
+Groovy Script for Calling a Value Mapp
 
 ```javascript
 
@@ -155,8 +155,8 @@ def Message processData(Message message) {
    sourceValue = map.get("<your source value>");
 
    // the getMappedValue inputs below (except for sourceValue) come from the related Value Mapping Artifact
-   // reference: def targetValue = valueMapApi.getMappedValue('<your source agency>', '<your source identifier>', sourceValue, '<your target agency>', '<your target identifier>')
-   def targetValue = valueMapApi.getMappedValue('<your source agency>', '<your source identifier>', sourceValue, '<your target agency>', '<your target identifier>')
+   // reference: def targetValue = valueMapApi.getMappedValue("<your source agency>", "<your source identifier>", sourceValue, "<your target agency>", "<your target identifier>")
+   def targetValue = valueMapApi.getMappedValue("<your source agency>", "<your source identifier>", sourceValue, "<your target agency>", "<your target identifier>")
    
    // set output value as message property
    // reference: message.setProperty("<your target value>", targetValue);      
