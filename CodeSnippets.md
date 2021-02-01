@@ -146,7 +146,6 @@ def Message processData(Message message) {
    def map = message.getProperties();
    def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null)    
    
-   
    // the Value Mapping functionality defined below
    // ValueMap (Source agency, Source identifier, Source value, Target agency, Target identifier) = Target value;
    
