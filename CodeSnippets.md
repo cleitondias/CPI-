@@ -153,8 +153,6 @@ def Message processData(Message message) {
    // the Value Mapping functionality defined below
    // ValueMap (Source agency, Source identifier, Source value, Target agency, Target identifier) = Target value;
    
-   // yourValueMappingExample
-   
    // Step 2: assign getMappedValue vars
    def sourceAgency = "yourSourceAgency";
    def sourceIdentifier = "yourSourceIdentifier";
