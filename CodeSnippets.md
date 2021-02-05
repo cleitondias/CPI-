@@ -189,12 +189,12 @@ def Message processData(Message message) {
     // see the guide below for more information on assigning vars
     
     // Step 1: assign message property to elemKey
-    def elemKey = "inCountryCode";
+    def elemKey = "youKeyElement";
     
     // Step 2: assign element names
-    def elemParentName = "cfApp";
-    def elemKeyName = "countryCode";
-    def elemDataName = "countryInfo";
+    def elemParentName = "yourParentElement";
+    def elemKeyName = "yourKeyElementName";
+    def elemDataName = "yourDataElementName";
 
     def xmlOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}";
     message.setBody(xmlOut);
