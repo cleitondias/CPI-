@@ -137,13 +137,13 @@ Groovy Script for Value Mapping
 
 import com.sap.gateway.ip.core.customdev.util.Message;
 import java.util.HashMap;
-import com.sap.it.api.ITApiFactory
-import com.sap.it.api.mapping.ValueMappingApi
+import com.sap.it.api.ITApiFactory;
+import com.sap.it.api.mapping.ValueMappingApi;
 // mapping.ValueMappingApi will be used to execute value mapping with the given parameters
 
 def Message processData(Message message) {
    def map = message.getProperties();
-   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null) 
+   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null);
    
    // Step 1: assign message property vars
    def inputProperty = "yourInputProperty";
@@ -158,7 +158,7 @@ def Message processData(Message message) {
    def targetAgency = "yourTargetAgency";
    def targetIdentifier = "yourTargetIdentifier";   
 
-   def targetValue = valueMapApi.getMappedValue(sourceAgency, sourceIdentifier, map.get(inputProperty), targetAgency, targetIdentifier)
+   def targetValue = valueMapApi.getMappedValue(sourceAgency, sourceIdentifier, map.get(inputProperty), targetAgency, targetIdentifier);
    message.setProperty(outputProperty, targetValue);  
    
    return message;
