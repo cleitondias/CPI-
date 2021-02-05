@@ -39,7 +39,7 @@ def Message processData(Message message) {
 	def messageLog = messageLogFactory.getMessageLog(message);
 	if(messageLog != null){
 		messageLog.addAttachmentAsString("Incoming Message", body, "text/xml");
-	}
+	};
 	 
 	return message;
 }
