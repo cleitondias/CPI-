@@ -269,8 +269,4 @@ Schema for Message Output
 
 */
 
-### Video 19 CPIS - Adding Value Mapping to an Integration Flow
-
-Groovy Script for Value Mapping
-
-```javascript
+```
