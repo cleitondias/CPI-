@@ -190,7 +190,7 @@ def Message processData(Message message) {
     // see the guide below for more information on assigning vars
     
     // Step 1: assign message property to elemKey
-    def elemKey = "youKeyElement";
+    def elemKey = "yourKeyElement";
     
     // Step 2: assign element names
     def elemParentName = "yourParentElement";
@@ -207,7 +207,6 @@ def Message processData(Message message) {
 
 ---------------------------
 Example for Var Assignments
----------------------------
 
     // message property for elemKey
     def elemKey = "inCountryCode";
@@ -219,7 +218,6 @@ Example for Var Assignments
     
 -------------------------
 Example for Script Inputs
--------------------------
 
     1) Input Message Body (JSON from Cloud Foundry Application)
     
@@ -238,7 +236,6 @@ Example for Script Inputs
         
 -------------------------
 Example for Script Output
--------------------------        
 
     3) Output from Grooy Script
     
@@ -257,7 +254,6 @@ Example for Script Output
         
 -------------------------
 Schema for Message Output
--------------------------
 
     <root>
         <elemParent>
