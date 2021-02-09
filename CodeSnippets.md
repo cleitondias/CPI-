@@ -187,7 +187,7 @@ def Message processData(Message message) {
     // message properties 
     def map = message.getProperties();
     
-    // see the guide below for more information on assigning vars
+    // see the examples & schema further below for more information
     
     // Step 1: assign message property to elemKey
     def elemKey = "yourKeyElement";
