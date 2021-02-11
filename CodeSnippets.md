@@ -68,7 +68,7 @@ API Policy: Proxy Endpoint > Preflow > Mediation Policies > Assign Message (Inco
 
 API Policy: SAP Cloud Foundry XSUAA JWTToken > Scripts > config.js
 
-```javascript
+```java
 
 context.setVariable("sapapim.clientId",context.proxyRequest.headers.clientId);
 context.setVariable("sapapim.secret",context.proxyRequest.headers.secret);
@@ -171,7 +171,7 @@ def Message processData(Message message) {
 
 Groovy Script for JSON to XML
 
-```javascript
+```java
 
 import com.sap.gateway.ip.core.customdev.util.Message
 import java.util.HashMap
@@ -182,7 +182,7 @@ def Message processData(Message message) {
     jsonIn = jsonIn.toString()
     jsonIn = jsonIn.substring(1,jsonIn.length()-1)
     message.setBody(jsonIn)
-    message
+    return message
 }
 
 ```
@@ -192,7 +192,7 @@ def Message processData(Message message) {
 
 Groovy Script for JSON to XML
 
-```javascript
+```java
 
 import com.sap.gateway.ip.core.customdev.util.Message
 import java.util.HashMap
