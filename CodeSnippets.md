@@ -166,9 +166,29 @@ def Message processData(Message message) {
 
 <BR><BR><BR><BR><BR><BR>            
 ### NOTE: The Code Below is for Upcoming Videos
+	
+### Video 25 CPIS - Content Enricher: Combine Message Data	
+
+Groovy Script for JSON to XML
+
+```javascript
+
+import com.sap.gateway.ip.core.customdev.util.Message
+import java.util.HashMap
+import groovy.json.*
+
+def Message processData(Message message) {
+    def jsonIn = message.getBody(String.class)
+    jsonIn = jsonIn.toString()
+    jsonIn = jsonIn.substring(1,jsonIn.length()-1)
+    message.setBody(jsonIn)
+    message
+}
+
+```
 
 
-### Video 24 CPIS - Combining Message Data
+### Video 26 CPIS - Content Enricher: Enrich Message Data
 
 Groovy Script for JSON to XML
 
