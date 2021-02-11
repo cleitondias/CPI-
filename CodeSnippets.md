@@ -30,18 +30,18 @@ GroovyScript for Logging
 
 ```javascript
 
-import com.sap.gateway.ip.core.customdev.util.Message;
-import java.util.HashMap;
+import com.sap.gateway.ip.core.customdev.util.Message
+import java.util.HashMap
 
 def Message processData(Message message) {
 	
-	def body = message.getBody(java.lang.String) as String;
-	def messageLog = messageLogFactory.getMessageLog(message);
+	def body = message.getBody(java.lang.String) as String
+	def messageLog = messageLogFactory.getMessageLog(message)
 	if(messageLog != null){
-		messageLog.addAttachmentAsString("Incoming Message", body, "text/xml");
-	};
+		messageLog.addAttachmentAsString("Incoming Message", body, "text/xml")
+	}
 	 
-	return message;
+	return message
 }
 
 ```
@@ -136,33 +136,33 @@ Groovy Script for Value Mapping
 
 ```javascript
 
-import com.sap.gateway.ip.core.customdev.util.Message;
-import java.util.HashMap;
-import com.sap.it.api.ITApiFactory;
-import com.sap.it.api.mapping.ValueMappingApi;
+import com.sap.gateway.ip.core.customdev.util.Message
+import java.util.HashMap
+import com.sap.it.api.ITApiFactory
+import com.sap.it.api.mapping.ValueMappingApi
 // mapping.ValueMappingApi will be used to execute value mapping with the given parameters
 
 def Message processData(Message message) {
-   def map = message.getProperties();
-   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null);
+   def map = message.getProperties()
+   def valueMapApi = ITApiFactory.getApi(ValueMappingApi.class, null)
    
    // Step 1: assign message property vars
-   def inputProperty = "yourInputProperty";
-   def outputProperty = "yourOutputProperty";
+   def inputProperty = "yourInputProperty"
+   def outputProperty = "yourOutputProperty"
    
    // the Value Mapping functionality defined below
-   // ValueMap (Source agency, Source identifier, Source value, Target agency, Target identifier) = Target value;
+   // ValueMap (Source agency, Source identifier, Source value, Target agency, Target identifier) = Target value
    
    // Step 2: assign getMappedValue vars
-   def sourceAgency = "yourSourceAgency";
-   def sourceIdentifier = "yourSourceIdentifier";
-   def targetAgency = "yourTargetAgency";
-   def targetIdentifier = "yourTargetIdentifier";   
+   def sourceAgency = "yourSourceAgency"
+   def sourceIdentifier = "yourSourceIdentifier"
+   def targetAgency = "yourTargetAgency"
+   def targetIdentifier = "yourTargetIdentifier" 
 
-   def targetValue = valueMapApi.getMappedValue(sourceAgency, sourceIdentifier, map.get(inputProperty), targetAgency, targetIdentifier);
-   message.setProperty(outputProperty, targetValue);  
+   def targetValue = valueMapApi.getMappedValue(sourceAgency, sourceIdentifier, map.get(inputProperty), targetAgency, targetIdentifier)
+   message.setProperty(outputProperty, targetValue)
    
-   return message;
+   return message
 }
 
 
@@ -175,32 +175,32 @@ Groovy Script for JSON to XML
 
 ```javascript
 
-import com.sap.gateway.ip.core.customdev.util.Message;
-import java.util.HashMap;
-import groovy.json.*;
+import com.sap.gateway.ip.core.customdev.util.Message
+import java.util.HashMap
+import groovy.json.*
 
 def Message processData(Message message) {
     // message body 
-    def jsonIn = message.getBody(String.class);
-    jsonIn = jsonIn.toString();
-    jsonIn = jsonIn.substring(1,jsonIn.length()-1);
+    def jsonIn = message.getBody(String.class)
+    jsonIn = jsonIn.toString()
+    jsonIn = jsonIn.substring(1,jsonIn.length()-1)
     // message properties 
-    def map = message.getProperties();
+    def map = message.getProperties()
     
     // see the examples & schema further below for more information
     
     // Step 1: assign message property to elemKey
-    def elemKey = "yourKeyElement";
+    def elemKey = "yourKeyElement"
     
     // Step 2: assign element names
-    def elemParentName = "yourParentElement";
-    def elemKeyName = "yourKeyElementName";
-    def elemDataName = "yourDataElementName";
+    def elemParentName = "yourParentElement"
+    def elemKeyName = "yourKeyElementName"
+    def elemDataName = "yourDataElementName"
 
-    def xmlOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}";
-    message.setBody(xmlOut);
+    def xmlOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}"
+    message.setBody(xmlOut)
     
-    return message;
+    return message
 }
 
 /*
@@ -209,12 +209,12 @@ def Message processData(Message message) {
 Example for Var Assignments
 
     // message property for elemKey
-    def elemKey = "inCountryCode";
+    def elemKey = "inCountryCode"
     
     // element names
-    def elemParentName = "cfApp";
-    def elemKeyName = "countryCode";
-    def elemDataName = "countryInfo";
+    def elemParentName = "cfApp"
+    def elemKeyName = "countryCode"
+    def elemDataName = "countryInfo"
     
 -------------------------
 Example for Script Inputs
