@@ -121,10 +121,6 @@ Code for New Sales By Country Resource, API Designer
 
 ```
 
-<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>                 
-### NOTE: The Code Below is for Upcoming Videos
-
-
 ### Video 18 CPIS - Value Mapping
 
 [Value Mapping File](https://github.com/saphanaacademy/cpis/blob/main/resources/valuemappingCountryCodeToId.csv)
@@ -167,6 +163,9 @@ def Message processData(Message message) {
 
 
 ```
+
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>                 
+### NOTE: The Code Below is for Upcoming Videos
 
 
 ### Video 24 CPIS - Combining Message Data
