@@ -167,7 +167,7 @@ def Message processData(Message message) {
 <BR><BR><BR><BR><BR><BR>            
 ##### NOTE: The Code Below is for Upcoming Videos
 	
-### Video 25 CPIS - Content Enricher: Combine Message Data	
+### Video 24 CPIS - Content Enricher: Combine Message Data	
 
 Groovy Script for JSON to XML
 
@@ -188,7 +188,7 @@ def Message processData(Message message) {
 ```
 
 
-### Video 26 CPIS - Content Enricher: Enrich Message Data
+### Video 25 CPIS - Content Enricher: Enrich Message Data
 
 Groovy Script for JSON to XML
 
