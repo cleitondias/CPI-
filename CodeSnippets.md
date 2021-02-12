@@ -208,10 +208,10 @@ def Message processData(Message message) {
     
     // see the examples & schema further below for more information
     
-    // Step 1: assign message property to elemKey
+    // Step 1: assign message property to be added as an XML Element Key
     def elemKey = "yourKeyElement"
     
-    // Step 2: assign element names
+    // Step 2: assign element names of your choice (see XML Schema further below)
     def elemParentName = "yourParentElement"
     def elemKeyName = "yourKeyElementName"
     def elemDataName = "yourDataElementName"
@@ -272,7 +272,7 @@ Example for Script Output
         </root>
         
 -------------------------
-Schema for Message Output
+Schema for XML Message Output
 
     <root>
         <elemParent>
