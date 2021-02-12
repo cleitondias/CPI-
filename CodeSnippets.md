@@ -206,7 +206,7 @@ def Message processData(Message message) {
     // message properties 
     def map = message.getProperties()
     
-    // see the examples & schema further below for more information
+    // see the schema & examples further below for more information
     
     // Step 1: assign message property to be added as an XML Element Key
     def elemKey = "yourKeyElement"
@@ -223,6 +223,18 @@ def Message processData(Message message) {
 }
 
 /*
+
+-------------------------
+Schema for XML Message Output
+
+    <root>
+        <elemParent>
+            <elemKey>key</elemKey>
+            <elemData>
+                <></>
+            </elemData>
+        </elemParent>
+    </root>   
 
 ---------------------------
 Example for Var Assignments
@@ -269,19 +281,7 @@ Example for Script Output
                     <amount>123</amount>
                 </countryInfo>
             </CFApp>
-        </root>
-        
--------------------------
-Schema for XML Message Output
-
-    <root>
-        <elemParent>
-            <elemKey>key</elemKey>
-            <elemData>
-                <></>
-            </elemData>
-        </elemParent>
-    </root>           
+        </root>        
 
 */
 
