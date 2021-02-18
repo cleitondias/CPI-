@@ -171,7 +171,7 @@ def Message processData(Message message) {
 
 Syntax for Content Modifier
 
-```JSON
+```java
 
 {
   "objects": ${body}
