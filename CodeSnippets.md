@@ -169,6 +169,16 @@ def Message processData(Message message) {
 	
 ### Video 24 CPIS - Content Enricher: Combine Message Data	
 
+Syntax for Content Modifier
+
+```JSON
+
+{
+  "objects": ${body}
+}
+
+```
+
 Groovy Script for JSON to XML
 
 ```java
