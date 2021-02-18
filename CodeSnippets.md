@@ -169,7 +169,7 @@ def Message processData(Message message) {
 	
 ### Video 24 CPIS - Content Enricher: Combine Message Data	
 
-Syntax for Content Modifier
+Content Modifier Expression, Modify JSON
 
 ```java
 
@@ -179,7 +179,7 @@ Syntax for Content Modifier
 
 ```
 
-Groovy Script for JSON to XML
+Groovy Script, Modify JSON
 
 ```java
 
@@ -190,7 +190,7 @@ import groovy.json.*
 def Message processData(Message message) {
     def jsonIn = message.getBody(String.class)
     jsonIn = jsonIn.toString()
-    jsonIn = jsonIn.substring(1,jsonIn.length()-1)
+    jsonIn = "{\"objects\":" + jsonIn + "}"
     message.setBody(jsonIn)
     return message
 }
@@ -200,7 +200,7 @@ def Message processData(Message message) {
 
 ### Video 25 CPIS - Content Enricher: Enrich Message Data
 
-Groovy Script for JSON to XML
+Groovy Script, Modify JSON
 
 ```java
 
