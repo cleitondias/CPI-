@@ -215,7 +215,7 @@ def Message processData(Message message) {
     jsonIn = jsonIn.substring(1,jsonIn.length()-1)
     def map = message.getProperties()
     
-    // see the schema further below for more information
+    // see the returned message schema further below for more info
     
     // Step 1: assign message property to be added as a key element
     def elemKey = "yourKeyElement"
@@ -230,7 +230,7 @@ def Message processData(Message message) {
     return message
 }
 
-/*  schema output
+/*  returned message schema
 {
     "yourParentElementName": [
         {
