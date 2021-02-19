@@ -215,9 +215,9 @@ def Message processData(Message message) {
     jsonIn = jsonIn.substring(1,jsonIn.length()-1)
     def map = message.getProperties()
     
-    // see the XML Schema further below for more information
+    // see the schema further below for more information
     
-    // Step 1: assign message property to be added as an XML Element Key
+    // Step 1: assign message property to be added as a key element
     def elemKey = "yourKeyElement"
     
     // Step 2: assign element names of your choice
@@ -230,16 +230,19 @@ def Message processData(Message message) {
     return message
 }
 
-/* 
-Schema for XML Message Output
-    <root>
-        <elemParentName>
-            <elemKeyName>elemKey</elemKeyName>
-            <elemDataName>
-                <></>
-            </elemDataName>
-        </elemParentName>
-    </root>   
+/*  schema output
+{
+    "yourParentElementName": [
+        {
+            "yourKeyElementName": "null",
+            "yourDataElementName": [
+                {
+                    jsonIn
+                }
+            ]
+        }
+    ]
+}
 */
 
 ```
