@@ -203,6 +203,7 @@ def Message processData(Message message) {
 Groovy Script, Modify JSON
 
 ```java
+
 import com.sap.gateway.ip.core.customdev.util.Message
 import java.util.HashMap
 import groovy.json.*
@@ -224,8 +225,8 @@ def Message processData(Message message) {
     def elemKeyName = "yourKeyElementName"
     def elemDataName = "yourDataElementName"
 
-    def xmlOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}"
-    message.setBody(xmlOut)
+    def jsonOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}"
+    message.setBody(jsonOut)
     return message
 }
 
