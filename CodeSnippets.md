@@ -215,7 +215,7 @@ def Message processData(Message message) {
     jsonIn = jsonIn.substring(1,jsonIn.length()-1)
     def map = message.getProperties()
     
-    // see the XML schema  further below for more information
+    // see the XML Schema further below for more information
     
     // Step 1: assign message property to be added as an XML Element Key
     def elemKey = "yourKeyElement"
