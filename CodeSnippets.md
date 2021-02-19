@@ -203,96 +203,42 @@ def Message processData(Message message) {
 Groovy Script, Modify JSON
 
 ```java
-
 import com.sap.gateway.ip.core.customdev.util.Message
 import java.util.HashMap
 import groovy.json.*
 
 def Message processData(Message message) {
-    // message body 
+    // message body & properties
     def jsonIn = message.getBody(String.class)
     jsonIn = jsonIn.toString()
     jsonIn = jsonIn.substring(1,jsonIn.length()-1)
-    // message properties 
     def map = message.getProperties()
     
-    // see the schema & examples further below for more information
+    // see the XML schema  further below for more information
     
     // Step 1: assign message property to be added as an XML Element Key
     def elemKey = "yourKeyElement"
     
-    // Step 2: assign element names of your choice (see XML Schema further below)
+    // Step 2: assign element names of your choice
     def elemParentName = "yourParentElement"
     def elemKeyName = "yourKeyElementName"
     def elemDataName = "yourDataElementName"
 
     def xmlOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}"
     message.setBody(xmlOut)
-    
     return message
 }
 
-/*
-
--------------------------
+/* 
 Schema for XML Message Output
-
     <root>
-        <elemParent>
-            <elemKey>key</elemKey>
-            <elemData>
+        <elemParentName>
+            <elemKeyName>key value</elemKeyName>
+            <elemDataName>
                 <></>
-            </elemData>
-        </elemParent>
+            </elemDataName>
+        </elemParentName>
     </root>   
-
----------------------------
-Example for Var Assignments
-
-    // message property for elemKey
-    def elemKey = "inCountryCode"
-    
-    // element names
-    def elemParentName = "cfApp"
-    def elemKeyName = "countryCode"
-    def elemDataName = "countryInfo"
-    
--------------------------
-Example for Script Inputs
-
-    1) Input Message Body (JSON from Cloud Foundry Application)
-    
-        [
-            {
-                "id": 1,
-                "region": "Europe",
-                "country": "France",
-                "amount": 123
-            }
-        ]
-    
-    2) Input Message Property Value (Assigned from Sender Message Body)
-    
-        "FRA"
-        
--------------------------
-Example for Script Output
-
-    3) Output from Grooy Script
-    
-        <?xml version='1.0' encoding='UTF-8'?>
-        <root>
-            <cfApp>
-                <countryCode>FRA</countryCode>
-                <countryInfo>
-                    <id>1</id>
-                    <region>Europe</region>
-                    <country>France</country>
-                    <amount>123</amount>
-                </countryInfo>
-            </CFApp>
-        </root>        
-
 */
 
 ```
