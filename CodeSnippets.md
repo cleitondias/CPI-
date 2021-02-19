@@ -221,7 +221,7 @@ def Message processData(Message message) {
     def elemKey = "yourKeyElement"
     
     // Step 2: assign element names of your choice
-    def elemParentName = "yourParentElement"
+    def elemParentName = "yourParentElementName"
     def elemKeyName = "yourKeyElementName"
     def elemDataName = "yourDataElementName"
 
@@ -234,7 +234,7 @@ def Message processData(Message message) {
 Schema for XML Message Output
     <root>
         <elemParentName>
-            <elemKeyName>key value</elemKeyName>
+            <elemKeyName>elemKey</elemKeyName>
             <elemDataName>
                 <></>
             </elemDataName>
