@@ -210,32 +210,32 @@ import groovy.json.*
 
 def Message processData(Message message) {
     // message body & properties
-    def jsonIn = message.getBody(String.class)
-    jsonIn = jsonIn.toString()
-    jsonIn = jsonIn.substring(1,jsonIn.length()-1)
+    def jsonOrig = message.getBody(String.class)
+    def jsonMod = jsonOrig.toString()
+    jsonMod = jsonMod.substring(1,jsonMod.length()-1)
     def map = message.getProperties()
     
-    // see the returned message schema further below for more info
+    // see the returned message structure further below for more info
     
-    // Step 1: assign message property to be added as a key element
-    def elemKey = "yourKeyElement"
+    // Step 1: assign message property to be added as a key object
+    def objKeyValue = "yourMessageProperty"
     
-    // Step 2: assign element names of your choice
-    def elemParentName = "yourParentElementName"
-    def elemKeyName = "yourKeyElementName"
-    def elemDataName = "yourDataElementName"
+    // Step 2: assign object names of your choice
+    def objParentName = "yourParentName"
+    def objKeyName = "yourKeyName"
+    def objDataArrayName = "yourDataArrayName"
 
-    def jsonOut = "{\"" + elemParentName + "\": [{\"" + elemKeyName + "\": \"" + map.get(elemKey) + "\",\"" + elemDataName  + "\":[" + jsonIn + "]}]}"
-    message.setBody(jsonOut)
+    jsonMod = "{\"" + objParentName + "\": [{\"" + objKeyName + "\": \"" + map.get(objKeyValue) + "\",\"" + objDataArrayName  + "\":[" + jsonMod + "]}]}"
+    message.setBody(jsonMod)
     return message
 }
 
-/*  returned message schema
+/*  returned JSON message structure
 {
-    "yourParentElementName": [
+    "objParentName": [
         {
-            "yourKeyElementName": "null",
-            "yourDataElementName": [
+            "objKeyName": "null",
+            "objDataArrayName": [
                 {
                     jsonIn
                 }
