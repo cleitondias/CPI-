@@ -163,9 +163,6 @@ def Message processData(Message message) {
 
 
 ```
-
-<BR><BR><BR><BR><BR><BR>            
-##### NOTE: The Code Below is for Upcoming Videos
 	
 ### Video 24 CPIS - Content Enricher: Combine Message Data	
 
