@@ -16,9 +16,9 @@ This ReadMe file contains links and code for the Getting Started with SAP Integr
 
 ### <a name="cfapp"></a>Cloud Foundry Application Required for 2nd Half of Series
 
-See the videos on "SCP Onboarding : Local Development" Parts 1 to 3. (This should be ~ video 15 to 17.)
+See the videos on "SCP Onboarding : Local Development" Parts 1 to 3. These should be at ~ video 15 in the "SAP Cloud Platform Developer Onboarding" playlist.
 
-*  &nbsp;&nbsp;&nbsp;&nbsp;[Cloud Foundry App Creation](https://www.youtube.com/playlist?list=PLkzo92owKnVw3l4fqcLoQalyFi9K4-UdY)
+*  &nbsp;&nbsp;&nbsp;&nbsp;[SAP Cloud Platform Developer Onboarding](https://www.youtube.com/playlist?list=PLkzo92owKnVw3l4fqcLoQalyFi9K4-UdY)
 
 ### <a name="cpil"></a>Helpful Links for Developing with SAP Integration Suite
 
