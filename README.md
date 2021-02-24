@@ -8,7 +8,7 @@
 This ReadMe file contains links and code for the Getting Started with SAP Integration Suite video series. Please note that this file is a work in progress and is subject to changes and additions.
 
 ### <a name="cpiv"></a>Getting Started with SAP Integration Suite Video Playlist
-* [Playlist on SAP HANA Academy](https://youtube.com/playlist?list=PLkzo92owKnVy5gfh9etKt_TLkc-dM2l7t)
+* &nbsp;&nbsp;&nbsp;&nbsp;[Playlist on SAP HANA Academy](https://youtube.com/playlist?list=PLkzo92owKnVy5gfh9etKt_TLkc-dM2l7t)
 
 ### <a name="cpic"></a>Code Snippets, Roles, etc. for this Video Series
 
