@@ -121,12 +121,12 @@ Code for New Sales By Country Resource, API Designer
 
 ```
 
-### Video 17 CPIS - Value Mapping
+### Video 19 CPIS - Value Mapping
 
 [Value Mapping File](https://github.com/saphanaacademy/cpis/blob/main/resources/valuemappingCountryCodeToId.csv)
 
 
-### Video 18 CPIS - Adding Value Mapping to an Integration Flow
+### Video 20 CPIS - Adding Value Mapping to an Integration Flow
 
 Groovy Script for Value Mapping
 
