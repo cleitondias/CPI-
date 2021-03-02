@@ -164,7 +164,7 @@ def Message processData(Message message) {
 
 ```
 	
-### Video 24 CPIS - Content Enricher: Combine Message Data	
+### Video 22 CPIS - Content Enricher: Combine Message Data	
 
 Content Modifier Expression, Modify JSON
 
@@ -195,7 +195,7 @@ def Message processData(Message message) {
 ```
 
 
-### Video 25 CPIS - Content Enricher: Enrich Message Data
+### Video 23 CPIS - Content Enricher: Enrich Message Data
 
 Groovy Script, Modify JSON
 
