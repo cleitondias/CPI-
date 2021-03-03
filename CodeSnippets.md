@@ -176,7 +176,7 @@ Content Modifier Expression, Modify JSON
 
 ```
 
-Groovy Script, Modify JSON
+Groovy Script, Modify JSON (Groovy Script Step is an option to using the Content Modifier Expression above)
 
 ```java
 
